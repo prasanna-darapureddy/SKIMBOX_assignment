@@ -1,0 +1,46 @@
+.home-bg-container {
+  background-image: linear-gradient(to right, #fff, #80e5ff);
+  min-height: 100vh;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+}
+.buttons-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  align-self: center;
+  border-radius: 50px;
+  margin-top: 20px;
+  padding: 3px;
+  border: 2px solid #80e5ff;
+  width: 250px;
+}
+.pay-button {
+  background-color: transparent;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 8px;
+}
+.selected-button {
+  background-color: black;
+  color: white;
+  border-radius: 50px;
+  padding: 8px;
+}
+.cards-container {
+  list-style-type: none;
+  display: flex;
+  margin-top: 20px;
+}
+@media screen and (max-width: 568px) {
+  .buttons-container {
+    display: none;
+  }
+  .cards-container {
+    display: flex;
+    flex-direction: column;
+  }
+}

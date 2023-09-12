@@ -1,0 +1,127 @@
+* {
+  margin: 0px;
+}
+.nav-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+}
+.logo-img {
+  width: 120px;
+}
+.left-container {
+  display: flex;
+  align-items: center;
+}
+.free-trail {
+  text-decoration: underline;
+  margin-right: 20px;
+}
+.menu-button {
+  background-color: transparent;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+.menus-container {
+  list-style-type: none;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0px 0.25px 0px 0px #808080;
+  padding-inline-start: 0px;
+  padding: 10px;
+  margin: 0px;
+}
+.menus {
+  font-family: "Roboto";
+  font-size: 20px;
+  margin-bottom: 15px;
+  display: flex;
+  align-items: center;
+}
+.category-container {
+  display: flex;
+  justify-content: space-evenly;
+}
+.category-buttons {
+  padding: 10px;
+  width: 100%;
+  background-color: transparent;
+  color: #000;
+  font-weight: 900;
+  font-family: "Roboto";
+  font-size: 20px;
+  border: none;
+  border: 1.9px solid #cecccc;
+}
+
+/* System view */
+@media screen and (min-width: 568px) {
+  .mobile-header-view-container {
+    display: none;
+  }
+  .large-header-view-container {
+    display: flex;
+  }
+  .nav-container {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    width: 100vw;
+  }
+  .header-container {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+  }
+  .menus-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    box-shadow: none;
+    margin-left: 20px;
+    padding: 0px;
+    margin-bottom: 0px;
+    width: 100%;
+  }
+  .menus {
+    margin-right: 20px;
+    margin-bottom: 0px;
+  }
+  .login-menu {
+    display: none;
+  }
+  .login-free-buttons-container {
+    display: flex;
+    align-items: center;
+  }
+  .login-button {
+    background-color: transparent;
+    border: none;
+    color: #000;
+    font-size: 18px;
+    margin-right: 10px;
+  }
+  .start-free-trail-button {
+    color: #fff;
+    background-color: #000;
+    border-radius: 15px;
+    padding: 8px;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    width: 120px;
+  }
+}
+
+/* Mobile View */
+@media screen and (max-width: 567px) {
+  .large-header-view-container {
+    display: none;
+  }
+  .login-free-buttons-container {
+    display: none;
+  }
+
